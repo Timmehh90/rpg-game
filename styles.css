@@ -61,7 +61,10 @@ body {
   border: 1px solid var(--black-clr);
   padding: 5px;
   color: #ffffff;
+  text-align: center;
   background-color: var(--green-clr);
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
 }
 
 .stat {
