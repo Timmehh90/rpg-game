@@ -18,6 +18,7 @@ body {
   background: var(--parchment-clr);
   color: var(--green-clr);
   padding: 10px;
+  text-align: center;
 }
 
 .title {
@@ -40,6 +41,12 @@ body {
   border: 1px solid var(--parchment-clr);
   padding: 5px;
   color: var(--green-clr);
+  display: flex;
+  justify-content: center;
+}
+
+#controls {
+  gap: 10px;
 }
 
 #monsterStats {
