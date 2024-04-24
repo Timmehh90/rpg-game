@@ -20,6 +20,12 @@ body {
   padding: 10px;
 }
 
+.title {
+  margin: 0 0 10px;
+  text-align: center;
+  color: var(--green-clr);
+}
+
 #game {
   max-width: 500px;
   max-height: 900px;
