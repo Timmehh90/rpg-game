@@ -14,5 +14,5 @@ I am to make a small rpg game with html, css and javascript.
   a powerful method to use in a for loop to iterate over an array.
 - _Math.floor()_ will round a number to an integer.
 - _Math.random() \* num_ will pick a random number from 0 till num minus 1.
-- It's better to bold a text within an element using <strong></strong> instead of
-  using <span class="bold"></span>.
+- It's better to bold a text within an element using strong, /strong instead of
+  using "span class='bold', /span".
