@@ -32,16 +32,19 @@ const monsters = [
     name: "slime",
     level: 2,
     health: 15,
+    img: "./img/slime.jpg",
   },
   {
     name: "fanged beast",
     level: 8,
     health: 60,
+    img: "./img/fanged-beast.jpg",
   },
   {
     name: "dragon",
     level: 20,
     health: 300,
+    img: "./img/dragon.jpg",
   },
 ];
 const locations = [
@@ -67,8 +70,8 @@ const locations = [
     name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters.",
-    img: "",
+    text: "You enter the cave. There should be monsters here somewhere.",
+    img: "./img/cave.jpg",
   },
   {
     name: "fight",
@@ -86,7 +89,7 @@ const locations = [
     ],
     "button functions": [goTown, goTown, goTown],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
-    img: "",
+    img: "./img/kill-monster.jpg",
   },
   {
     name: "lose",
@@ -204,6 +207,7 @@ function goFight() {
   monsterStats.style.display = "block";
   monsterName.innerText = monsters[fighting].name;
   monsterHealthText.innerText = monsterHealth;
+  image.src = monsters[fighting].img;
 }
 
 function attack() {
