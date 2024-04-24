@@ -1,3 +1,11 @@
+:root {
+  --parchment-clr: #fcf5e5;
+  --parchment-clr-dark: #f4dba0;
+  --black-clr: #1c1c1c;
+  --grey-clr: #808a9f;
+  --green-clr: #6c7d47;
+}
+
 body {
   background-color: #0a0a23;
 }
