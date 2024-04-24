@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Tangerine:wght@400;700&display=swap");
+
 :root {
   --parchment-clr: #fcf5e5;
   --parchment-clr-dark: #f4dba0;
@@ -8,6 +10,8 @@
 
 body {
   background: var(--parchment-clr);
+  font-family: "Playball", sans-serif;
+  font-size: 1.6rem;
 }
 
 #text {
@@ -46,6 +50,8 @@ body {
 
 button {
   cursor: pointer;
+  font-family: "Playball", sans-serif;
+  font-size: 1rem;
   color: #ffffff;
   background-color: #6c7d47;
   border: 3px solid #6c7d47;
