@@ -18,6 +18,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const image = document.querySelector("img");
 
 // Array variables
 const weapons = [
@@ -49,6 +50,7 @@ const locations = [
     "button text": ["Go to store", "Go to cave", "Fight dragon"],
     "button functions": [goStore, goCave, fightDragon],
     text: 'You are in the town square. You see a sign that says "Store".',
+    img: "./img/town-square.png",
   },
   {
     name: "store",
@@ -59,18 +61,21 @@ const locations = [
     ],
     "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store.",
+    img: "./img/shop.png",
   },
   {
     name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
     text: "You enter the cave. You see some monsters.",
+    img: "",
   },
   {
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
     "button functions": [attack, dodge, goTown],
     text: "You are fighting a monster.",
+    img: "",
   },
   {
     name: "kill monster",
@@ -81,24 +86,28 @@ const locations = [
     ],
     "button functions": [goTown, goTown, goTown],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
+    img: "",
   },
   {
     name: "lose",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;",
+    img: "",
   },
   {
     name: "win",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
     text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
+    img: "",
   },
   {
     name: "easter egg",
     "button text": ["2", "8", "Go to town square?"],
     "button functions": [pickTwo, pickEight, goTown],
     text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
+    img: "",
   },
 ];
 
@@ -116,6 +125,7 @@ function update(location) {
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
   text.innerHTML = location.text;
+  image.src = location.img;
 }
 
 function goTown() {
